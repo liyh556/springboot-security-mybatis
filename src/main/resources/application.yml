@@ -1,0 +1,4 @@
+#指定引用的yml文件
+spring:
+  profiles:
+    active: dev

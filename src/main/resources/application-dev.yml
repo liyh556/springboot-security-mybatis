@@ -1,0 +1,35 @@
+#端口 项目名称
+server:
+  port: 8060
+  servlet:
+    context-path: /liyh
+
+#数据源
+spring:
+  datasource:
+   # type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/springboot_mybatis_jwt?useUnicode=yes&characterEncoding=UTF-8&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123
+
+#mybatis
+mybatis:
+  mapper-locations: classpath:mapper/*.xml,classpath*:tk/**/mapper/*.xml
+  type-aliases-package: com.icss.springbootsecurityjwt.model
+  config-location: classpath:mybatis-config.xml
+
+#分页插件
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: countSql
+sys:
+  security:
+    code:
+      image:
+        length: 6
+        width: 100
+        url: /user/*,userLogin
+    loginUrl: /userLogin
