@@ -24,7 +24,7 @@
         <persistence.version>1.0</persistence.version>
         <json-lib.version>2.4</json-lib.version>
         <commons.version>3.1</commons.version>
-        <beanutils.version>1.8.3</beanutils.version>
+        <beanutils.version>1.9.2</beanutils.version>
         <logging.version>1.1.1</logging.version>
         <collections.version>3.2.1</collections.version>
         <ezmorph.version>1.0.6</ezmorph.version>
